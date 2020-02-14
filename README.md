@@ -1,2 +1,2 @@
 # veterinair-centrum
-Git repo for: Veterinair Centrum Genemuiden
+Git repository for: Veterinair Centrum Genemuiden
