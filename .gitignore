@@ -4,6 +4,10 @@
 node_modules/
 /node_modules/
 
+# Minified files #
+############
+*.min.*
+
 # Packages #
 ############
 *.7z
