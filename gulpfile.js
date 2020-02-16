@@ -4,11 +4,15 @@ const minifyCSS = require('gulp-csso');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
+const rename = require('gulp-rename');
 
 function css() {
     return src('./src/sass/*.scss', { sourcemaps: true })
         .pipe(sass())
         .pipe(minifyCSS())
+        .pipe(rename({
+            suffix: '.min'
+        }))
         .pipe(dest('./dist/css/'), { sourcemaps: true })
         .pipe(browserSync.stream());
 }
