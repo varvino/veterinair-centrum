@@ -1,0 +1,468 @@
+/* ---------------------------------------------------------------------------
+  >>> TABLE OF CONTENTS
+  ------------------------
+    0. Carousel
+    1. Logo
+    2. Navbar
+    3. Sidenav
+    4. Hero
+    5. Blog
+    6. Team
+    7. Footer
+------------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------------
+    1. Carousel
+------------------------------------------------------------------------------ */
+.carousel {
+  display   : flex;
+  flex-wrap : nowrap;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.about__carousel-item {
+  display       : flex;
+  flex-direction: column;
+
+  @include phone {
+    flex   : 0 0 80%;
+    padding: 0 1.5625rem;
+  }
+
+  @include tablet {
+    flex   : 0 0 40%;
+    padding: 0 1.5625rem;
+  }
+
+  @include laptop {
+    flex   : 1;
+    padding: 0 3.125rem;
+  }
+}
+
+.team__carousel {
+  @include laptop {
+    padding  : 0 9.375rem;
+    flex-wrap: wrap;
+  }
+}
+
+.team__carousel-item {
+  flex: 0 0 auto;
+
+  @include phone {
+    padding-right: 1.5625rem;
+  }
+
+  @include tablet {
+    padding-right: 1.5625rem;
+  }
+
+  @include laptop {
+    flex   : 0 0 calc(100%/3);
+    padding: 0 3.125rem 1.5625rem 0;
+  }
+
+  &:nth-child(3n+3) {
+    @include laptop {
+      padding-right: 0;
+    }
+  }
+
+  &:nth-last-child(-n+3) {
+    @include laptop {
+      padding-bottom: 0;
+    }
+  }
+
+  &:first-child {
+    @include phone {
+      padding-left: 1.5625rem;
+    }
+
+    @include tablet {
+      padding-left: 1.5625rem;
+    }
+
+    @include laptop {
+      padding-left: 0;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------
+    2. Logo
+------------------------------------------------------------------------------ */
+.logo__link {
+  display: inline-block;
+}
+
+.logo__image {
+  @include phone {
+    max-width: 200px;
+  }
+
+  @include tablet {
+    max-width: 200px;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+    3. Navbar
+------------------------------------------------------------------------------ */
+.navbar {
+  @include phone {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include laptop {
+    display: block;
+  }
+}
+
+.nav {
+  @include laptop {
+    display    : flex;
+    align-items: center;
+    padding-top: 0.625rem;
+  }
+}
+
+.nav__item {
+  margin-right: 1.25rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav__link {
+  color          : white;
+  text-decoration: none;
+  display        : block;
+
+  &:after {
+    content         : "";
+    display         : block;
+    background-color: white;
+    width           : 0;
+    margin          : 0.625rem auto 0 auto;
+    height          : 0.125rem;
+    transition      : all .25s ease-in-out;
+  }
+
+  &:hover:after,
+  &:active:after,
+  &:focus:after {
+    @include laptop {
+      width: 100%;
+    }
+  }
+}
+
+.hamburger {
+  filter: $color-white;
+
+  @include laptop {
+    display: none;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+    4. Sidenav
+------------------------------------------------------------------------------ */
+.sidenav {
+  height          : 100vh;
+  width           : 0;
+  position        : fixed;
+  z-index         : 999;
+  top             : 0;
+  left            : 0;
+  background-color: white;
+  overflow-x      : hidden;
+  transition      : 0.25s;
+  color           : $color-muted;
+  fill            : $color-muted;
+
+  a {
+    color          : $color-muted;
+    text-decoration: none;
+  }
+
+  .nav__item {
+    margin-bottom: 3.125rem;
+    padding-left : 2.1875rem;
+    position     : relative;
+  }
+
+  .nav__link {
+    display    : flex;
+    align-items: center;
+  }
+
+  .nav__icon-container {
+    min-width   : 1.625rem;
+    margin-right: 1.5625rem;
+  }
+
+  .nav__icon {
+    filter: invert(61%) sepia(0%) saturate(1114%) hue-rotate(164deg) brightness(89%) contrast(87%);
+  }
+}
+
+.sidenav__top-bar {
+  display         : flex;
+  justify-content : flex-end;
+  background-color: #eee;
+  padding         : 0.9375rem;
+  margin-bottom   : 3.75rem;
+
+  .close-icon {
+    filter: invert(61%) sepia(0%) saturate(1114%) hue-rotate(164deg) brightness(89%) contrast(87%);
+  }
+}
+
+.js-sidenav--toggled {
+  width: 15.625rem;
+}
+
+/* ---------------------------------------------------------------------------
+    5. Hero
+------------------------------------------------------------------------------ */
+.hero__text {
+  font-size  : 1.5rem;
+  font-weight: 400;
+
+  @include phone {
+    margin-bottom: 25px;
+  }
+
+  @include tablet {
+    margin-bottom: 25px;
+    max-width    : 450px;
+  }
+}
+
+.hero__button {
+  color           : white;
+  background-color: $color-primary;
+  font-size       : 1.125rem;
+  font-weight     : 500;
+  border          : 0.0625rem solid transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    color           : white;
+    border          : 0.0625rem solid white;
+  }
+
+  @include phone {
+    max-width: 85%;
+  }
+
+  @include tablet {
+    max-width: 300px;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+    6. Blog
+------------------------------------------------------------------------------ */
+.blog__items {
+  display  : flex;
+  flex-wrap: wrap;
+}
+
+.blog__item {
+  @include phone {
+    margin-bottom: 1.875rem;
+  }
+
+  @include tablet {
+    flex: 1 1 calc(50% - 1.875rem);
+  }
+
+  &:nth-child(odd) {
+    @include tablet {
+      margin: 0 1.875rem 1.875rem 0;
+    }
+  }
+
+  &:last-child {
+    @include tablet {
+      margin: 0;
+    }
+  }
+
+  &>* {
+    @include phone {
+      margin-bottom: 0.9375rem;
+    }
+
+    @include tablet {
+      margin-bottom: 0.9375rem;
+    }
+  }
+}
+
+.blog__headline {
+  font-size  : 1.5rem;
+  font-weight: 400;
+  color      : $color-primary;
+}
+
+.blog__readmore {
+  display     : inline-block;
+  font-weight : 700;
+  font-variant: all-small-caps;
+  font-size   : 1.25rem;
+}
+
+.blog__metadata {
+  color: $color-muted;
+}
+
+/* ---------------------------------------------------------------------------
+    7. Team
+------------------------------------------------------------------------------ */
+.team__title {
+  @include phone {
+    padding-left: 1.5625rem;
+  }
+
+  @include tablet {
+    padding-left: 1.5625rem;
+  }
+
+  @include laptop {
+    padding-left: 9.375rem;
+  }
+}
+
+.team__member-name {
+  font-weight  : 700;
+  font-size    : 1.125rem;
+  margin-bottom: 0.625rem;
+}
+
+.team__member-position {
+  color: $color-muted;
+}
+
+/* ---------------------------------------------------------------------------
+    8. Footer
+------------------------------------------------------------------------------ */
+.footer-container {
+  @include tablet {
+    display  : flex;
+    flex-wrap: wrap;
+  }
+
+  >* {
+    @include tablet {
+      flex: 1 1 calc(50% - 1.875rem);
+    }
+
+    &:nth-child(odd) {
+      @include tablet {
+        margin: 0 1.875rem 1.875rem 0;
+      }
+    }
+
+    &:last-child {
+      @include tablet {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.contact-container {
+  display       : flex;
+  flex-direction: column;
+}
+
+.footer__divider {
+  border: solid 0.0625rem $color-muted;
+}
+
+.footer__title {
+  font-weight : 600;
+  font-size   : 1.5rem;
+  font-variant: all-small-caps;
+  color       : $color-muted;
+}
+
+.footer__container--flex {
+  display        : flex;
+  justify-content: space-between;
+
+  .dates,
+  .working-hours {
+    text-transform: lowercase;
+  }
+
+  .dates {
+    color: $color-muted;
+  }
+}
+
+.footer__button {
+  @include phone {
+    max-width : 85%;
+    margin-top: 1.875rem;
+  }
+
+  @include tablet {
+    max-width : 85%;
+    margin-top: 1.875rem;
+  }
+}
+
+.footer__company-detail,
+.footer__contact-option,
+.footer__social-item {
+  display    : flex;
+  align-items: center;
+}
+
+.footer__icon {
+  fill         : $color-muted;
+  margin-right : 1.25rem;
+  margin-bottom: 0 !important;
+}
+
+/* ---------------------------------------------------------------------------
+    9. About
+------------------------------------------------------------------------------ */
+.about__carousel-item {
+  &:first-child {
+    .about__icon {
+      width: 70px;
+    }
+  }
+}
+
+.about__icon {
+  margin: 0 auto;
+  width : 3.125rem;
+  height: 3.125rem;
+  filter: $color-white;
+
+  @include phone {
+    margin-bottom: 1.5625rem;
+  }
+
+  @include tablet {
+    margin-bottom: 1.5625rem;
+  }
+}

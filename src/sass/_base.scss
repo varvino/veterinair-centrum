@@ -1,0 +1,256 @@
+/* ---------------------------------------------------------------------------
+  >>> TABLE OF CONTENTS
+  ------------------------
+    0. Variables
+    1. Mixins
+    2. CSS Reset
+    3. Document Setup
+------------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------------
+    0. Variables
+------------------------------------------------------------------------------ */
+$color-primary  : #198f6c;
+$color-secondary: #004a80;
+$color-muted    : #8a8a8a;
+$color-white    : invert(99%) sepia(0%) saturate(78%) hue-rotate(28deg) brightness(112%) contrast(100%);
+
+/* ---------------------------------------------------------------------------
+    0. Mixins
+------------------------------------------------------------------------------ */
+@mixin phone {
+  @media (max-width: 37.499rem) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 37.5rem) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media (min-width: 56.25rem) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: 62.5rem) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 87.5rem) {
+    @content;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+    2. CSS Reset
+------------------------------------------------------------------------------ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin        : 0;
+  padding       : 0;
+  border        : 0;
+  font-size     : 100%;
+  font          : inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* ---------------------------------------------------------------------------
+    3. Document Setup
+------------------------------------------------------------------------------ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family     : "Roboto", sans-serif;
+  color           : #373737;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: $color-secondary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.75;
+}
+
+.button {
+  text-decoration : none;
+  text-align      : center;
+  display         : inline-block;
+  border          : 0.0625rem solid transparent;
+  outline         : none;
+  border-radius   : 999px;
+  width           : 100%;
+  margin          : 0 auto;
+  transition      : all 0.25s ease;
+  color           : white;
+  background-color: $color-primary;
+  font-size       : 1.125rem;
+  font-weight     : 500;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    color           : white;
+    border          : 0.0625rem solid white;
+  }
+
+  @include phone {
+    padding: 0.9375rem;
+  }
+
+  @include tablet {
+    padding: 0.9375rem;
+  }
+}
+
+.title {
+  font-size  : 2.25rem;
+  font-weight: 500;
+
+  @include phone {
+    margin-bottom: 1.875rem;
+  }
+
+  @include tablet {
+    margin-bottom: 1.875rem;
+  }
+}
+
+.full-width {
+  width       : 100vw;
+  position    : relative;
+  left        : 50%;
+  right       : 50%;
+  margin-left : -50vw;
+  margin-right: -50vw;
+}
