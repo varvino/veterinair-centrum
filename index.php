@@ -4,21 +4,11 @@
 <!DOCTYPE html>
 <html>
 <?php
-<?php $page = 'front-page'; ?>
-<?php include "template-parts/head.php"; ?>
+$post_type = 'front-page';
 include(ROOT . "template-parts/head.php");
 ?>
 
-<body class="<?php echo $page ?>">
-    <header class="header__outer-container">
-        <?php include "template-parts/header.php"; ?>
-    </header>
-    <main>
-        <?php include "content/front-page.php"; ?>
-    </main>
-    <footer>
-        <?php include "template-parts/footer.php"; ?>
-    </footer>
+<body <?php if (isset($post_type)) : ?> class="<?php echo $post_type ?>" <?php endif; ?>>
 
     <?php
     include(ROOT . "template-parts/header.php");
