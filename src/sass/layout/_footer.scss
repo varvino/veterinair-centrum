@@ -1,5 +1,5 @@
 .footer__outer-container {
-    background-color: #373737;
+    background-color: $color-body;
     color           : white;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .copyright-container {
-    background-color: darken($color: #373737, $amount: 5);
+    background-color: darken($color: $color-body, $amount: 5);
     color           : $color-muted;
     text-align      : center;
 

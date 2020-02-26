@@ -25,7 +25,8 @@
     background-color: #dbf0d9;
     background-image: url('../../src/img/backgrounds/pattern.jpg');
     background-size : auto;
-    color           : #373737;
+    color           : $color-body;
+
 }
 
 .header__inner-container {
