@@ -46,7 +46,7 @@
     &:after {
         content         : "";
         display         : block;
-        background-color: white;
+        background-color: $color-body;
         width           : 0;
         margin          : 0.625rem auto 0 auto;
         height          : 0.125rem;
@@ -62,10 +62,18 @@
     }
 }
 
+.nav--front-page .nav__link:after {
+    background-color: white;
+}
+
 .hamburger {
-    filter: $color-white--filter;
+    filter: $color-body--filter;
 
     @include laptop {
         display: none;
     }
+}
+
+.nav--front-page .hamburger {
+    filter: $color-white--filter;
 }
