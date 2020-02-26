@@ -1,15 +1,19 @@
 <div class="header__inner-container">
     <div class="navigation-container">
-        <div class="logo"><?php include 'components/logo.php'; ?></div>
-        <div class="navbar"><?php include 'components/navigation.php'; ?></div>
+            <div class="logo">
+                <a class="logo__link" href="<?php echo HTTP; ?>">
+                    <img class="logo__image" src="<?php echo HTTP; ?>src/img/logo.png" alt="Ga terug naar de voorpagina">
+                </a>
+            </div>
+            <div class="navbar"><?php include(ROOT . 'template-parts/components/navigation.php'); ?></div>
         <div class="sidenav js-sidenav">
             <div class="sidenav__top-bar">
-                <img src="./src/img/icons/icon_arrow-left.svg" alt="Sluit de navigatie" class="close-icon js-close-icon">
+                    <img src="<?php echo HTTP; ?>src/img/icons/icon_arrow-left.svg" class="close-icon js-close-icon">
             </div>
-            <?php include 'components/navigation-mobile.php'; ?>
+                <?php include(ROOT . 'template-parts/components/navigation-mobile.php'); ?>
         </div>
         <a class="hamburger js-hamburger">
-            <img src="./src/img/icons/icon_hamburger.svg" alt="Open het navigatiemenu">
+                <img src="<?php echo HTTP; ?>src/img/icons/icon_hamburger.svg" alt="Open de navigatie">
         </a>
     </div>
     <div class="hero-container">

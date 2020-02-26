@@ -28,7 +28,7 @@ function js() {
 
 function browser() {
     browserSync.init(null, {
-        proxy: 'localhost/veterinair-centrum', // 'dev.site.com' in your example
+        proxy: 'localhost/veterinair-centrum/', // 'dev.site.com' in your example
         files: [
             './**/*.php',
             '*.php'
