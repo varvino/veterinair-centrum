@@ -1,3 +1,8 @@
+<?php require_once(ROOT . "functions.php") ?>
+
+<!DOCTYPE html>
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,3 +17,5 @@
 
     <?php include_once(ROOT . "template-parts/components/google-tag.php"); ?>
 </head>
+
+<body <?php if (isset($post_type)) : ?> class="<?php echo $post_type ?>" <?php endif; ?>>

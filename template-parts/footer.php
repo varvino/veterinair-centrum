@@ -61,3 +61,8 @@
     </div>
     <div class="copyright-container">&copy; <?php echo date("Y") ?> &mdash; Veterinair Centrum Genemuiden</div>
 </footer>
+
+<script src="<?php echo HTTP; ?>dist/js/main.min.js"></script>
+</body>
+
+</html>
