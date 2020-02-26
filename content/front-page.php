@@ -90,6 +90,14 @@
         </div>
         <div class="team__carousel-item">
             <div class="team__member-name">
+                        Z. Zwiggelaar
+                    </div>
+                    <div class="team__member-position">
+                        Paraveterinair
+                    </div>
+                </div>
+                <div class="team__carousel-item">
+                    <div class="team__member-name">
                 L. Raggers
             </div>
             <div class="team__member-position">
