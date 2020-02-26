@@ -1,0 +1,13 @@
+.logo__link {
+    display: inline-block;
+}
+
+.logo__image {
+    @include phone {
+        max-width: 200px;
+    }
+
+    @include tablet {
+        max-width: 200px;
+    }
+}

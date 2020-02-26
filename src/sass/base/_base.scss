@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family     : "Roboto", sans-serif;
+  color           : #373737;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: $color-secondary;
+
+  @include laptop {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
