@@ -22,7 +22,7 @@ function the_excerpt($post_type_url)
     @$doc = new DOMDocument();
     @$doc->loadHTML($post_type);
     $xpath = new DomXPath($doc);
-    $nodeList = $xpath->query("//*[@class='blog__content-lead']");
+    $nodeList = $xpath->query("//*[@class='blogpost__content-lead']");
     $node = $nodeList->item(0);
     $excerpt = $node->nodeValue;
 
