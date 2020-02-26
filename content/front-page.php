@@ -14,6 +14,10 @@
         </div>
     </div>
 </div>
+        <div class="controls controls--about">
+            <img src="<?php echo HTTP; ?>src/img/icons/icon_arrow-right.svg" alt="Scroll voor meer content" class="controls__icon">
+            <div class="controls__text">Scroll voor meer</div>
+        </div>
 
 <div class="blog-container">
     <h2 class="blog__title title">Blog</h2>
@@ -106,3 +110,7 @@
         </div>
     </div>
 </div>
+        <div class="controls">
+            <img src="<?php echo HTTP; ?>/src/img/icons/icon_arrow-right.svg" alt="Scroll voor meer content" class="controls__icon">
+            <div class="controls__text">Scroll voor meer</div>
+        </div>
