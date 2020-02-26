@@ -8,23 +8,23 @@
         </a>
     </li>
     <li class="nav__item">
-        <a class="nav__link" href="#">
+        <a class="nav__link" href="#blog">
             <div class="nav__icon-container">
                 <img src="<?php echo HTTP; ?>src/img/icons/icon_bookmarks.svg" alt="Neem een kijkje in onze blog!" class="nav__icon">
-            </div>
-            <span>Team</span>
-        </a>
-    </li>
-    <li class="nav__item">
-        <a class="nav__link" href="#">
-            <div class="nav__icon-container">
-                <img src="<?php echo HTTP; ?>src/img/icons/icon_user.svg" alt="Bekijk ons team!" class="nav__icon">
             </div>
             <span>Blog</span>
         </a>
     </li>
     <li class="nav__item">
-        <a class="nav__link" href="#">
+        <a class="nav__link" href="#team">
+            <div class="nav__icon-container">
+                <img src="<?php echo HTTP; ?>src/img/icons/icon_user.svg" alt="Bekijk ons team!" class="nav__icon">
+            </div>
+            <span>Team</span>
+        </a>
+    </li>
+    <li class="nav__item">
+        <a class="nav__link" href="#contact">
             <div class="nav__icon-container">
                 <img src="<?php echo HTTP; ?>src/img/icons/icon_contact.svg" alt="Klik hier voor de contact sectie." class="nav__icon">
             </div>
