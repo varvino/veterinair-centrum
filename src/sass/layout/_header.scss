@@ -27,6 +27,13 @@
     background-size : auto;
     color           : $color-body;
 
+    @include phone {
+        height: 18.75rem;
+    }
+
+    @include tablet {
+        height: 23.4375rem;
+    }
 }
 
 .header__inner-container {
