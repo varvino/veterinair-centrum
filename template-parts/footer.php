@@ -59,5 +59,5 @@
             </div>
         </div>
     </div>
-    <div class="copyright-container">&copy; <?php echo date('Y') ?> &mdash; Veterinair Centrum Genemuiden</div>
+    <div class="copyright-container">&copy; <?php echo date("Y") ?> &mdash; Veterinair Centrum Genemuiden</div>
 </footer>

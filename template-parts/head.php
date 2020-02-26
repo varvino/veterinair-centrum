@@ -10,5 +10,5 @@
         <link rel="canonical" href="<?php echo $canonical_url; ?>">
     <?php endif; ?>
 
-    <?php include_once(ROOT . 'template-parts/components/google-tag.php'); ?>
+    <?php include_once(ROOT . "template-parts/components/google-tag.php"); ?>
 </head>

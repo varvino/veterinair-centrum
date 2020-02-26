@@ -1,10 +1,10 @@
-<?php require_once('config.php'); ?>
-<?php require_once(ROOT . 'scripts.php') ?>
+<?php require_once("config.php"); ?>
+<?php require_once(ROOT . "functions.php") ?>
 
 <!DOCTYPE html>
 <html>
 <?php
-$post_type = 'front-page';
+$post_type = "front-page";
 include(ROOT . "template-parts/head.php");
 ?>
 
