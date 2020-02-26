@@ -13,14 +13,10 @@
     }
 
     @include tablet {
-        height: 34.375rem;
-    }
-
-    @include laptop {
         height: 31.25rem;
     }
 
-    @include desktop {
+    @include laptop {
         height: 28.125rem;
     }
 }
