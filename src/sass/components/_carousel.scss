@@ -3,10 +3,6 @@
     flex-wrap : nowrap;
     overflow-x: auto;
 
-    @include laptop {
-        justify-content: center;
-    }
-
     &::-webkit-scrollbar {
         display: none;
     }
