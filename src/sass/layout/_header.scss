@@ -1,4 +1,29 @@
+/* ---------------------------------------------------------------------------
+  >>> TABLE OF CONTENTS
+  ------------------------
+    0. Header
+    1. Hero
+------------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------------
+    0. Header
+------------------------------------------------------------------------------ */
 .header__outer-container {
+    background-image: url('../../src/img/backgrounds/pattern.jpg');
+    background-color: #dbf0d9;
+    background-size : 50%;
+    color           : $color-body;
+
+    @include phone {
+        height: 18.75rem;
+    }
+
+    @include tablet {
+        height: 23.4375rem;
+    }
+}
+
+.header__outer-container--front-page {
     background-image: linear-gradient(180deg,
             rgba(51, 51, 51, 0) 0%,
             rgba(51, 51, 51, 0.5) 100%),
@@ -18,21 +43,6 @@
 
     @include laptop {
         height: 28.125rem;
-    }
-}
-
-.header__outer-container--post {
-    background-color: #dbf0d9;
-    background-image: url('../../src/img/backgrounds/pattern.jpg');
-    background-size : auto;
-    color           : $color-body;
-
-    @include phone {
-        height: 18.75rem;
-    }
-
-    @include tablet {
-        height: 23.4375rem;
     }
 }
 
@@ -61,5 +71,59 @@
     @include desktop {
         width    : 60%;
         max-width: 56.25rem;
+    }
+}
+
+/* ---------------------------------------------------------------------------
+    1. Hero
+------------------------------------------------------------------------------ */
+
+.hero__title {
+    font-size    : 1.75rem;
+    margin-bottom: 0.625rem;
+}
+
+.hero__text {
+    font-size    : 1.5rem;
+    font-weight  : 400;
+    margin-bottom: 25px;
+    color        : $color-muted;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include tablet {
+        max-width: 450px;
+    }
+}
+
+.header__outer-container--front-page {
+    .hero__text {
+        color: white;
+    }
+}
+
+.hero__button {
+    color           : white;
+    background-color: $color-primary;
+    font-size       : 1.125rem;
+    font-weight     : 500;
+    border          : 0.0625rem solid transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: transparent;
+        color           : white;
+        border          : 0.0625rem solid white;
+    }
+
+    @include phone {
+        max-width: 85%;
+    }
+
+    @include tablet {
+        max-width: 300px;
     }
 }

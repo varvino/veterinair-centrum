@@ -8,6 +8,10 @@ node_modules/
 ############
 *.min.*
 
+# Source images #
+############
+src/img/*
+
 # Packages #
 ############
 *.7z

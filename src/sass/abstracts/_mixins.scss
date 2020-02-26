@@ -28,6 +28,10 @@
     }
 }
 
-@mixin transition {
+@mixin transition--fast {
     transition: all .25s ease-in-out;
+}
+
+@mixin transition--slow {
+    transition: all 1s ease-in-out;
 }

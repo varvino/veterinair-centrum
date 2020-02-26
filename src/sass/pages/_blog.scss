@@ -1,0 +1,84 @@
+/* ---------------------------------------------------------------------------
+  >>> TABLE OF CONTENTS
+  ------------------------
+    0. Blog Post
+    1. References Container
+------------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------------
+    0. Blog Post
+------------------------------------------------------------------------------ */
+.blogpost__headline {
+    margin-bottom: 0.9375rem;
+
+    @include phone {
+        font-size: 1.875rem;
+    }
+
+    @include tablet {
+        font-size: 2.1875rem;
+    }
+
+    @include laptop {
+        font-size: 2.5rem;
+    }
+}
+
+.blogpost__title {
+    margin-bottom: 0.9375rem;
+
+    @include phone {
+        font-size: 1.5rem;
+    }
+
+    @include tablet {
+        font-size: 1.75rem;
+    }
+
+    @include laptop {
+        font-size: 1.875rem;
+    }
+}
+
+.blogpost__date {
+    color          : $color-muted;
+    display        : inline-block;
+    text-decoration: none;
+    margin-bottom  : 1.5625rem;
+}
+
+.blogpost__content {
+
+    p,
+    img {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* ---------------------------------------------------------------------------
+    1. References Container
+------------------------------------------------------------------------------ */
+.references-container {
+    background-color: lighten($color: #f0f0f0, $amount: 4);
+    border-radius   : 0.3125rem;
+    padding         : 1.5625rem;
+}
+
+.references__title {
+    font-weight  : 700;
+    font-size    : 1.25rem;
+    margin-bottom: 1.5625rem;
+}
+
+.references__list {
+    list-style-type: decimal;
+    margin-left    : 1rem;
+}
+
+.references__list-item {
+    margin-bottom: 0.9375rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

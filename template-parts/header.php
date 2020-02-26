@@ -1,4 +1,5 @@
-<header class="header__outer-container <?php if (isset($post_type)) : echo "header__outer-container--" . $post_type; endif; ?>">
+<header class="header__outer-container <?php if (isset($post_type)) : echo "header__outer-container--" . $post_type;
+                                        endif; ?>">
     <div class="header__inner-container">
         <div class="navigation-container">
             <div class="logo">
@@ -17,6 +18,7 @@
                 <img src="<?php echo HTTP; ?>src/img/icons/icon_hamburger.svg" alt="Open de navigatie">
             </a>
         </div>
+
         <?php if (isset($post_type) && $post_type == "front-page") : ?>
             <div class="hero-container">
                 <h2 class="hero__text">
@@ -24,6 +26,15 @@
                 </h2>
                 <a href="#contact" class="hero__button button">Afspraak maken</a>
             </div>
+
+        <?php elseif (isset($post_type) && $post_type == "archive") : ?>
+            <div class="hero-container">
+                <h1 class="hero__title">Archief</h1>
+                <h2 class="hero__text">
+                    Op deze pagina kunt u onze artikels nalezen
+                </h2>
+            </div>
+
         <?php endif; ?>
     </div>
 </header>

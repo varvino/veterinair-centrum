@@ -1,11 +1,23 @@
-.spacing-s {
-    margin-bottom: 0.625rem;
-}
+.h-container {
+    margin : 0 auto;
+    padding: 1.5625rem 0;
 
-.spacing-m {
-    margin-bottom: 1.5625rem;
-}
+    @include phone {
+        width: 90%;
+    }
 
-.spacing-l {
-    margin-bottom: 3.125rem;
+    @include tablet {
+        width: 90%;
+    }
+
+    @include laptop {
+        padding  : 3.125rem 0;
+        width    : 70%;
+        max-width: 50rem;
+    }
+
+    @include desktop {
+        width    : 60%;
+        max-width: 56.25rem;
+    }
 }

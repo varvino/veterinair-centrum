@@ -1,55 +1,13 @@
 /* ---------------------------------------------------------------------------
   >>> TABLE OF CONTENTS
   ------------------------
-    0. Hero
-    1. About
-    2. Blog
-    3. Team
------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------
-    0. Hero
+    0. About
+    1. Blog
+    2. Team
 ------------------------------------------------------------------------------ */
 
-.hero__text {
-    font-size  : 1.5rem;
-    font-weight: 400;
-
-    @include phone {
-        margin-bottom: 25px;
-    }
-
-    @include tablet {
-        margin-bottom: 25px;
-        max-width    : 450px;
-    }
-}
-
-.hero__button {
-    color           : white;
-    background-color: $color-primary;
-    font-size       : 1.125rem;
-    font-weight     : 500;
-    border          : 0.0625rem solid transparent;
-
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: transparent;
-        color           : white;
-        border          : 0.0625rem solid white;
-    }
-
-    @include phone {
-        max-width: 85%;
-    }
-
-    @include tablet {
-        max-width: 300px;
-    }
-}
-
 /* ---------------------------------------------------------------------------
-    1. About
+    0. About
 ------------------------------------------------------------------------------ */
 .about__outer-container {
     background-color: $color-primary;
@@ -115,7 +73,7 @@
 }
 
 /* ---------------------------------------------------------------------------
-    2. Blog
+    1. Blog
 ------------------------------------------------------------------------------ */
 .blog-container {
     margin : 0 auto;
@@ -179,6 +137,10 @@
     }
 
     &>* {
+        &:last-child {
+            margin-bottom: 0;
+        }
+
         @include phone {
             margin-bottom: 0.9375rem;
         }
@@ -189,40 +151,7 @@
     }
 }
 
-.blog__headline-link {
-    display        : inline-block;
-    text-decoration: none;
-    color          : $color-primary;
-    position       : relative;
-
-    &:hover {
-        text-decoration: none;
-    }
-
-    &:after {
-        content         : "";
-        display         : block;
-        background-color: $color-primary;
-        position        : absolute;
-        left            : 0;
-        bottom          : -5px;
-        width           : 0;
-        margin          : 0 auto;
-        height          : 0.125rem;
-        @include transition;
-    }
-
-    &:hover:after,
-    &:active:after,
-    &:focus:after {
-        @include laptop {
-            width: 100%;
-        }
-    }
-}
-
 .blog__headline {
-    font-size  : 1.5rem;
     font-weight: 400;
 
     @include phone {
@@ -238,13 +167,12 @@
     }
 }
 
-.blog__readmore {
+.blog__headline-link {
     display        : inline-block;
-    font-weight    : 700;
-    font-variant   : all-small-caps;
-    font-size      : 1.25rem;
     text-decoration: none;
+    color          : $color-primary;
     position       : relative;
+    font-size      : 1.5rem;
 
     &:hover {
         text-decoration: none;
@@ -253,14 +181,14 @@
     &:after {
         content         : "";
         display         : block;
-        background-color: $color-secondary;
+        background-color: $color-primary;
         position        : absolute;
         left            : 0;
         bottom          : -5px;
         width           : 0;
         margin          : 0 auto;
         height          : 0.125rem;
-        @include transition;
+        @include transition--fast;
     }
 
     &:hover:after,
@@ -272,12 +200,30 @@
     }
 }
 
+.blog__links-container {
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-start;
+}
+
+.blog__readmore {
+    display        : inline-block;
+    font-weight    : 700;
+    font-variant   : all-small-caps;
+    font-size      : 1.25rem;
+    text-decoration: none;
+    position       : relative;
+    margin-bottom  : calc(0.9375rem - 0.125rem);
+}
+
 .blog__metadata {
-    color: $color-muted;
+    display        : inline-block;
+    color          : $color-muted;
+    text-decoration: none;
 }
 
 /* ---------------------------------------------------------------------------
-    3. Team
+    2. Team
 ------------------------------------------------------------------------------ */
 .team__outer-container {
     background-color: white;

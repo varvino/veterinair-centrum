@@ -1,10 +1,11 @@
-const { src, dest, watch } = require('gulp');
+const { src, dest, watch, gulp } = require('gulp');
 const sass = require('gulp-sass');
 const minifyCSS = require('gulp-csso');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 const rename = require('gulp-rename');
+const imagemin = require('gulp-imagemin');
 
 function css() {
     return src('./src/sass/*.scss', { sourcemaps: true })
@@ -39,6 +40,23 @@ function browser() {
     watch('./src/js/*.js', js).on('change', browserSync.reload);
 }
 
+function imageMinify() {
+    return src('./src/img/**/*')
+        .pipe(imagemin([
+            imagemin.gifsicle({ interlaced: true }),
+            imagemin.mozjpeg({ quality: 75, progressive: true }),
+            imagemin.optipng({ optimizationLevel: 5 }),
+            imagemin.svgo({
+                plugins: [
+                    { removeViewBox: true },
+                    { cleanupIDs: false }
+                ]
+            })
+        ]))
+        .pipe(dest('./dist/img/'))
+}
+
+exports.imagemin = imageMinify;
 exports.css = css;
 exports.js = js;
 exports.default = browser;

@@ -16,24 +16,54 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="controls controls--about">
             <img src="<?php echo HTTP; ?>src/img/icons/icon_arrow-right.svg" alt="Scroll voor meer content" class="controls__icon">
             <div class="controls__text">Scroll voor meer</div>
         </div>
     </div>
 
-    <div class="blog-container" id="blog">
+    <div class="h-container" id="blog">
         <h2 class="blog__title title">Blog</h2>
         <div class="blog__items">
 
             <div class="blog__item">
-                <a href="<?php echo HTTP; ?>content/blog/2020/blogpost.php" class="blog__headline-link">
-                    <h3 class="blog__headline"><?php the_title('content/blog/2020/blogpost.php'); ?></h3>
-                </a>
+                <h3 class="blog__headline">
+                    <a href="<?php echo HTTP; ?>content/blog/2020/wolvenpups-apporteren.php" class="blog__headline-link">
+                        <?php the_title('content/blog/2020/wolvenpups-apporteren.php'); ?>
+                    </a>
+                </h3>
+                <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/wolvenpups-apporteren.php'); ?></p>
+                <div class="blog__links-container">
+                    <a href="<?php echo HTTP; ?>content/blog/2020/wolvenpups-apporteren.php" class="blog__readmore">> Lees meer</a>
+                    <a href="<?php echo HTTP; ?>content/blog/archive.php" class="blog__metadata"><?php the_date('content/blog/2020/wolvenpups-apporteren.php') ?></a>
+                </div>
+            </div>
+
+            <div class="blog__item">
+                <h3 class="blog__headline">
+                    <a href="<?php echo HTTP; ?>content/blog/2020/blogpost.php" class="blog__headline-link">
+                        <?php the_title('content/blog/2020/blogpost.php'); ?>
+                    </a>
+                </h3>
                 <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/blogpost.php'); ?></p>
-                <a href="<?php echo HTTP; ?>content/blog/2020/blogpost.php" class="blog__readmore">> Lees meer</a>
-                <div class="blog__metadata">12 februari 2020</div>
+                <div class="blog__links-container">
+                    <a href="<?php echo HTTP; ?>content/blog/2020/blogpost.php" class="blog__readmore">> Lees meer</a>
+                    <a href="<?php echo HTTP; ?>content/blog/archive.php" class="blog__metadata"><?php the_date('content/blog/2020/blogpost.php') ?></a>
+                </div>
+            </div>
+
+            <div class="blog__item">
+                <h3 class="blog__headline">
+                    <a href="<?php echo HTTP; ?>content/blog/2020/blogpost.php" class="blog__headline-link">
+                        <?php the_title('content/blog/2020/blogpost.php'); ?>
+                    </a>
+                </h3>
+                <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/blogpost.php'); ?></p>
+                <div class="blog__links-container">
+                    <a href="<?php echo HTTP; ?>content/blog/2020/blogpost.php" class="blog__readmore">> Lees meer</a>
+                    <a href="<?php echo HTTP; ?>content/blog/archive.php" class="blog__metadata"><?php the_date('content/blog/2020/blogpost.php') ?></a>
+                </div>
             </div>
 
         </div>
