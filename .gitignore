@@ -10,7 +10,7 @@ node_modules/
 
 # Source images #
 ############
-src/img/*
+src/gfx/*
 
 # Packages #
 ############

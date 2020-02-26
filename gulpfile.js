@@ -41,9 +41,8 @@ function browser() {
 }
 
 function imageMinify() {
-    return src('./src/img/**/*')
+    return src('./src/**/**/*')
         .pipe(imagemin([
-            imagemin.gifsicle({ interlaced: true }),
             imagemin.mozjpeg({ quality: 75, progressive: true }),
             imagemin.optipng({ optimizationLevel: 5 }),
             imagemin.svgo({
@@ -53,7 +52,7 @@ function imageMinify() {
                 ]
             })
         ]))
-        .pipe(dest('./dist/img/'))
+        .pipe(dest('./dist/**/'))
 }
 
 exports.imagemin = imageMinify;
