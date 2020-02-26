@@ -7,7 +7,7 @@
     left            : 0;
     background-color: white;
     overflow-x      : hidden;
-    transition      : 0.25s;
+    @include transition;
     color           : $color-muted;
     fill            : $color-muted;
 

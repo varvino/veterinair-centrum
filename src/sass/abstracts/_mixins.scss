@@ -27,3 +27,7 @@
         @content;
     }
 }
+
+@mixin transition {
+    transition: all .25s ease-in-out;
+}

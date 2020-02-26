@@ -209,7 +209,7 @@
         width           : 0;
         margin          : 0 auto;
         height          : 0.125rem;
-        transition      : all .5s ease-in-out;
+        @include transition;
     }
 
     &:hover:after,
@@ -260,7 +260,7 @@
         width           : 0;
         margin          : 0 auto;
         height          : 0.125rem;
-        transition      : all .25s ease-in-out;
+        @include transition;
     }
 
     &:hover:after,
