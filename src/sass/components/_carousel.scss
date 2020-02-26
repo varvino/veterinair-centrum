@@ -11,3 +11,42 @@
         display: none;
     }
 }
+
+
+.controls {
+    display        : flex;
+    align-items    : center;
+    justify-content: flex-end;
+
+    @include phone {
+        padding: 1.5625rem 1.5625rem 1.5625rem 0;
+    }
+
+    @include tablet {
+        padding: 25px 25px 25px 0;
+    }
+
+    @include laptop {
+        display: none;
+    }
+}
+
+.controls__icon {
+    filter      : $color-muted--filter;
+    width       : 1.25rem;
+    margin-right: 0.4375rem;
+}
+
+.controls__text {
+    color: $color-muted;
+}
+
+.controls--about {
+    .controls__icon {
+        filter: invert(32%) sepia(35%) saturate(557%) hue-rotate(110deg) brightness(92%) contrast(93%);
+    }
+
+    .controls__text {
+        color: #2a6150;
+    }
+}
