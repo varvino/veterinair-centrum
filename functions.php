@@ -6,7 +6,7 @@ function the_title($post_type_url)
     @$doc = new DOMDocument();
     @$doc->loadHTML($post_type);
     $xpath = new DomXPath($doc);
-    $nodeList = $xpath->query("//*[@class='blog__headline']");
+    $nodeList = $xpath->query("//*[@class='blog__title']");
     $node = $nodeList->item(0);
     $title = $node->nodeValue;
 
