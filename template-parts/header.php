@@ -4,18 +4,18 @@
         <div class="navigation-container">
             <div class="logo">
                 <a class="logo__link" href="<?php echo HTTP; ?>">
-                    <img class="logo__image" src="<?php echo HTTP; ?>src/img/logo.png" alt="Ga terug naar de voorpagina">
+                    <img class="logo__image" src="<?php echo HTTP; ?>dist/gfx/logo.png" alt="Ga terug naar de voorpagina">
                 </a>
             </div>
             <div class="navbar"><?php include(ROOT . "template-parts/components/navigation.php"); ?></div>
             <div class="sidenav js-sidenav">
                 <div class="sidenav__top-bar">
-                    <img src="<?php echo HTTP; ?>src/img/icons/icon_arrow-left.svg" class="close-icon js-close-icon">
+                    <img src="<?php echo HTTP; ?>dist/gfx/icons/icon_arrow-left.svg" class="close-icon js-close-icon">
                 </div>
                 <?php include(ROOT . "template-parts/components/navigation-mobile.php"); ?>
             </div>
             <a class="hamburger js-hamburger">
-                <img src="<?php echo HTTP; ?>src/img/icons/icon_hamburger.svg" alt="Open de navigatie">
+                <img src="<?php echo HTTP; ?>dist/gfx/icons/icon_hamburger.svg" alt="Open de navigatie">
             </a>
         </div>
 
