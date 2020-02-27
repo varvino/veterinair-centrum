@@ -3,22 +3,22 @@
         <div class="about__inner-container">
             <div class="about__carousel carousel">
                 <div class="about__carousel-item">
-                    <img src="<?php echo HTTP; ?>src/img/icons/icon_hospital.svg" alt="Kom naar onze dierenkliniek!" class="about__icon">
+                    <img src="<?php echo HTTP; ?>dist/gfx/icons/icon_hospital.svg" alt="Kom naar onze dierenkliniek!" class="about__icon">
                     <p class="about__text">Wij zijn een dierenartsenpraktijk voor gezelschapsdieren, paarden en landbouwhuisdieren</p>
                 </div>
                 <div class="about__carousel-item">
-                    <img src="<?php echo HTTP; ?>src/img/icons/icon_blog.svg" alt="Neem een kijkje op onze blog!" class="about__icon">
+                    <img src="<?php echo HTTP; ?>dist/gfx/icons/icon_blog.svg" alt="Neem een kijkje op onze blog!" class="about__icon">
                     <p class="about__text">In onze blog kunt u bijhouden wat ons interesseert in de industrie of nieuwtjes over de praktijk lezen</p>
                 </div>
                 <div class="about__carousel-item">
-                    <img src="<?php echo HTTP; ?>src/img/icons/icon_ipad.svg" alt="Voor een afspraak, bel ons!" class="about__icon">
+                    <img src="<?php echo HTTP; ?>dist/gfx/icons/icon_ipad.svg" alt="Voor een afspraak, bel ons!" class="about__icon">
                     <p class="about__text">Voor het maken van een afspraak, bij voorkeur telefonisch contact opnemen</p>
                 </div>
             </div>
         </div>
 
         <div class="controls controls--about">
-            <img src="<?php echo HTTP; ?>src/img/icons/icon_arrow-right.svg" alt="Scroll voor meer content" class="controls__icon">
+            <img src="<?php echo HTTP; ?>dist/gfx/icons/icon_arrow-right.svg" alt="Scroll voor meer content" class="controls__icon">
             <div class="controls__text">Scroll voor meer</div>
         </div>
     </div>
@@ -26,6 +26,20 @@
     <div class="h-container" id="blog">
         <h2 class="blog__title title">Blog</h2>
         <div class="blog__items">
+
+            <div class="blog__item">
+                <h3 class="blog__headline">
+                    <a href="<?php echo HTTP; ?>content/blog/2020/wearables-voor-huisdieren.php" class="blog__headline-link">
+                        <?php the_title('content/blog/2020/wearables-voor-huisdieren.php'); ?>
+                    </a>
+                </h3>
+                <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/wearables-voor-huisdieren.php'); ?></p>
+                <div class="blog__links-container">
+                    <a href="<?php echo HTTP; ?>content/blog/2020/wearables-voor-huisdieren.php" class="blog__readmore">> Lees meer</a>
+                    <div class="blog__metadata"><?php the_date('content/blog/2020/wearables-voor-huisdieren.php') ?></div>
+                </div>
+            </div>
+
 
             <div class="blog__item">
                 <h3 class="blog__headline">
@@ -42,27 +56,14 @@
 
             <div class="blog__item">
                 <h3 class="blog__headline">
-                    <a href="<?php echo HTTP; ?>content/blog/2020/blogpost.php" class="blog__headline-link">
-                        <?php the_title('content/blog/2020/blogpost.php'); ?>
+                    <a href="<?php echo HTTP; ?>content/blog/2020/hondenbezit-beinvloeding.php" class="blog__headline-link">
+                        <?php the_title('content/blog/2020/hondenbezit-beinvloeding.php'); ?>
                     </a>
                 </h3>
-                <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/blogpost.php'); ?></p>
+                <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/hondenbezit-beinvloeding.php'); ?></p>
                 <div class="blog__links-container">
-                    <a href="<?php echo HTTP; ?>content/blog/2020/blogpost.php" class="blog__readmore">> Lees meer</a>
-                    <a href="<?php echo HTTP; ?>content/blog/archive.php" class="blog__metadata"><?php the_date('content/blog/2020/blogpost.php') ?></a>
-                </div>
-            </div>
-
-            <div class="blog__item">
-                <h3 class="blog__headline">
-                    <a href="<?php echo HTTP; ?>content/blog/2020/blogpost.php" class="blog__headline-link">
-                        <?php the_title('content/blog/2020/blogpost.php'); ?>
-                    </a>
-                </h3>
-                <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/blogpost.php'); ?></p>
-                <div class="blog__links-container">
-                    <a href="<?php echo HTTP; ?>content/blog/2020/blogpost.php" class="blog__readmore">> Lees meer</a>
-                    <a href="<?php echo HTTP; ?>content/blog/archive.php" class="blog__metadata"><?php the_date('content/blog/2020/blogpost.php') ?></a>
+                    <a href="<?php echo HTTP; ?>content/blog/2020/hondenbezit-beinvloeding.php" class="blog__readmore">> Lees meer</a>
+                    <a href="<?php echo HTTP; ?>content/blog/archive.php" class="blog__metadata"><?php the_date('content/blog/2020/hondenbezit-beinvloeding.php') ?></a>
                 </div>
             </div>
 
@@ -115,14 +116,6 @@
                 </div>
                 <div class="team__carousel-item">
                     <div class="team__member-name">
-                        Z. Zwiggelaar
-                    </div>
-                    <div class="team__member-position">
-                        Paraveterinair
-                    </div>
-                </div>
-                <div class="team__carousel-item">
-                    <div class="team__member-name">
                         L. Raggers
                     </div>
                     <div class="team__member-position">
@@ -132,7 +125,7 @@
             </div>
         </div>
         <div class="controls">
-            <img src="<?php echo HTTP; ?>/src/img/icons/icon_arrow-right.svg" alt="Scroll voor meer content" class="controls__icon">
+            <img src="<?php echo HTTP; ?>/dist/gfx/icons/icon_arrow-right.svg" alt="Scroll voor meer content" class="controls__icon">
             <div class="controls__text">Scroll voor meer</div>
         </div>
     </div>
