@@ -41,18 +41,9 @@ function browser() {
 }
 
 function imageMinify() {
-    return src('./src/**/**/*')
-        .pipe(imagemin([
-            imagemin.mozjpeg({ quality: 75, progressive: true }),
-            imagemin.optipng({ optimizationLevel: 5 }),
-            imagemin.svgo({
-                plugins: [
-                    { removeViewBox: true },
-                    { cleanupIDs: false }
-                ]
-            })
-        ]))
-        .pipe(dest('./dist/**/'))
+    return src('./src/gfx/**/*.*')
+        .pipe(imagemin())
+        .pipe(dest('./dist/gfx/'))
 }
 
 exports.imagemin = imageMinify;
