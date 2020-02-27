@@ -1,14 +1,14 @@
 <?php require_once("../../../config.php"); ?>
 
 <?php
-$title = "Wetenschappers zijn onverwacht getuige van wolvenpups die apporteren";
+$title = "Wetenschappers zijn onverwacht getuige van wolven die apporteren";
 $post_type = "post";
 include(ROOT . "template-parts/head.php");
 ?>
 <?php include(ROOT . "template-parts/header.php"); ?>
 
 <main class="h-container">
-    <h1 class="blogpost__headline">Wetenschappers zijn onverwacht getuige van wolvenpups die apporteren</h1>
+    <h1 class="blogpost__headline">Wetenschappers zijn onverwacht getuige van wolven die apporteren</h1>
     <a href="<?php echo HTTP; ?>content/blog/archive.php" class="blogpost__date">
         17 januari 2020
     </a>

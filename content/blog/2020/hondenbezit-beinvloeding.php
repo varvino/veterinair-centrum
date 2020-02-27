@@ -1,7 +1,7 @@
 <?php require_once("../../../config.php"); ?>
 
 <?php
-$title = "Wetenschappers zijn onverwacht getuige van wolvenpups die apporteren";
+$title = "Wetenschappers zijn onverwacht getuige van wolven die apporteren";
 $post_type = "post";
 include(ROOT . "template-parts/head.php");
 ?>
