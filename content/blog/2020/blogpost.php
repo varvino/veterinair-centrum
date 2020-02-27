@@ -18,7 +18,7 @@ include(ROOT . "template-parts/head.php");
             <h2 class="blogpost__title">Dit is een header</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum quasi voluptates placeat possimus repellendus ut esse, harum deserunt architecto provident perferendis facere autem cum asperiores commodi minima accusamus odio libero doloribus quaerat quibusdam accusantium. Voluptate?</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum quasi voluptates placeat possimus repellendus ut esse, harum deserunt architecto provident perferendis facere autem cum asperiores commodi minima accusamus odio libero doloribus quaerat quibusdam accusantium. Voluptate?</p>
-            <img src="<?php echo HTTP; ?>src/img/backgrounds/hero.jpg" alt="Een foto">
+            <img src="<?php echo HTTP; ?>dist/gfx/backgrounds/hero.jpg" alt="Een foto">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <a href="#">Voluptatum quasi voluptates</a> placeat possimus repellendus ut esse, harum deserunt architecto provident perferendis facere autem cum asperiores commodi minima accusamus odio libero doloribus quaerat quibusdam accusantium. Voluptate?</p>
         </div>
         <div class="references-container">
