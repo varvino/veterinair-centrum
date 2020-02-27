@@ -9,17 +9,26 @@
     0. Header
 ------------------------------------------------------------------------------ */
 .header__outer-container {
-    background-image: url('../../src/img/backgrounds/pattern.jpg');
+    background-image: url('../../dist/gfx/backgrounds/pattern.jpg');
     background-color: #dbf0d9;
-    background-size : 50%;
     color           : $color-body;
 
     @include phone {
-        height: 18.75rem;
+        height         : 18.75rem;
+        background-size: 100%;
     }
 
     @include tablet {
-        height: 23.4375rem;
+        height         : 23.4375rem;
+        background-size: 50%;
+    }
+
+    @include laptop {
+        background-size: 40%;
+    }
+
+    @include desktop {
+        background-size: 30%;
     }
 }
 
@@ -27,7 +36,7 @@
     background-image: linear-gradient(180deg,
             rgba(51, 51, 51, 0) 0%,
             rgba(51, 51, 51, 0.5) 100%),
-        url("../../src/img/backgrounds/hero.jpg");
+        url("../../dist/gfx/backgrounds/hero.jpg");
     background-size    : cover;
     background-position: center;
     background-repeat  : no-repeat;
@@ -64,7 +73,7 @@
     }
 
     @include laptop {
-        width    : 70%;
+        width    : 80%;
         max-width: 50rem;
     }
 
