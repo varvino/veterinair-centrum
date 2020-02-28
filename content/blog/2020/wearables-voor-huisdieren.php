@@ -3,7 +3,7 @@
 <?php
 $title = "Wetenschappers zijn onverwacht getuige van wolven die apporteren";
 $post_type = "post";
-$canonical_url = 'http://www.veterinair-centrum.nl/blog/wearables-voor-huisdieren';
+$canonical_url = '//veterinair-centrum.nl/blog/wearables-voor-huisdieren';
 include(ROOT . "template-parts/head.php");
 ?>
 <?php include(ROOT . "template-parts/header.php"); ?>

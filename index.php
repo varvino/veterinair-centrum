@@ -2,6 +2,7 @@
 
 <?php
 $post_type = "front-page";
+$canonical_url = '//veterinair-centrum.nl';
 include(ROOT . "template-parts/head.php");
 ?>
 

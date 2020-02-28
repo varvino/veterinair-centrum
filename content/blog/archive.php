@@ -3,6 +3,7 @@
 <?php
 $title = "Archief";
 $post_type = "archive";
+$canonical_url = '//veterinair-centrum.nl/blog/archive';
 include(ROOT . "template-parts/head.php");
 ?>
 
