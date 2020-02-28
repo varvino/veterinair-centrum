@@ -14,8 +14,10 @@ RewriteEngine On
     Redirect 301 /404 /404
     Redirect 301 /500 /404
 
-# Check if it's a file
-    RewriteCond %{REQUEST_FILENAME} !-f
+# Browser requests PHP
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
+    RewriteRule ^/?(.*)\.php$ /$1 [L,R=301]
 
-# Remove .php extension
-    RewriteRule ^([^\.]+)$ $1.php [NC,L]
+# Check to see if the request is for a PHP file
+    RewriteCond %{REQUEST_FILENAME}\.php -f
+    RewriteRule ^/?(.*)$ /$1.php [L]
