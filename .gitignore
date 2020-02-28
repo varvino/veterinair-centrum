@@ -6,8 +6,8 @@ node_modules/
 
 # Source images #
 ############
-git-ftp/**
-git-ftp/**/*
+git-ftp/
+/git-ftp/
 
 # Source images #
 ############
