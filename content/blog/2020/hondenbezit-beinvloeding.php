@@ -3,6 +3,7 @@
 <?php
 $title = "Wetenschappers zijn onverwacht getuige van wolven die apporteren";
 $post_type = "post";
+$canoncial = 'http://www.veterinair-centrum.nl/blog/hondenbezit-beinvloed-door-genen';
 include(ROOT . "template-parts/head.php");
 ?>
 <?php include(ROOT . "template-parts/header.php"); ?>
