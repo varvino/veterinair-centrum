@@ -1,0 +1,17 @@
+.four-o-four {
+    .button{
+        &:hover{
+            border-color: $color-body;
+            color: $color-body;
+        }
+    }
+}
+
+.four-o-four__title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.four-o-four__text{
+    text-align: center;
+}
