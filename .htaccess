@@ -7,13 +7,6 @@ RewriteEngine On
     ErrorDocument 404 /404
     ErrorDocument 500 /404
 
-# Redirect all error pages to 404.
-    Redirect 301 /401 /404
-    Redirect 301 /402 /404
-    Redirect 301 /403 /404
-    Redirect 301 /404 /404
-    Redirect 301 /500 /404
-
 # Browser requests PHP
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
     RewriteRule ^/?(.*)\.php$ /$1 [L,R=301]
