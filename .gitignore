@@ -6,6 +6,11 @@ node_modules/
 
 # Source images #
 ############
+git-ftp/**
+git-ftp/**/*
+
+# Source images #
+############
 src/gfx/**
 src/gfx/**/*
 
