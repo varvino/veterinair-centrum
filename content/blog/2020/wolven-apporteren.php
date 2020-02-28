@@ -3,7 +3,7 @@
 <?php
 $title = "Wetenschappers zijn onverwacht getuige van wolven die apporteren";
 $post_type = "post";
-$canoncial = 'http://www.veterinair-centrum.nl/blog/wolven-apporteren';
+$canonical_url = 'http://www.veterinair-centrum.nl/blog/wolven-apporteren';
 include(ROOT . "template-parts/head.php");
 ?>
 <?php include(ROOT . "template-parts/header.php"); ?>
