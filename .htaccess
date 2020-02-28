@@ -7,4 +7,8 @@ ErrorDocument 404 /veterinair-centrum/404.php
 ErrorDocument 500 /veterinair-centrum/404.php
 
 # Redirects
+Redirect 301 /401 /404.php
+Redirect 301 /402 /404.php
+Redirect 301 /403 /404.php
 Redirect 301 /404 /404.php
+Redirect 301 /500 /404.php
