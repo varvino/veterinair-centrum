@@ -1,4 +1,11 @@
-# Redirect all error pages to 404.
+# Redirect all error pages to 404.php.
+    ErrorDocument 401 /404.php
+    ErrorDocument 402 /404.php
+    ErrorDocument 403 /404.php
+    ErrorDocument 404 /404.php
+    ErrorDocument 500 /404.php
+
+# Redirect all error pages to 404.php.
     Redirect 301 /401 /404.php
     Redirect 301 /402 /404.php
     Redirect 301 /403 /404.php
