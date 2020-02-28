@@ -36,7 +36,7 @@
                 <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/wearables-voor-huisdieren.php'); ?></p>
                 <div class="blog__links-container">
                     <a href="<?php echo HTTP; ?>content/blog/2020/wearables-voor-huisdieren.php" class="blog__readmore">> Lees meer</a>
-                    <div class="blog__metadata"><?php the_date('content/blog/2020/wearables-voor-huisdieren.php') ?></div>
+                    <a href="<?php echo HTTP; ?>content/blog/archive" class="blog__metadata"><?php the_date('content/blog/2020/wearables-voor-huisdieren.php') ?></a>
                 </div>
             </div>
 
@@ -50,7 +50,7 @@
                 <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/wolven-apporteren.php'); ?></p>
                 <div class="blog__links-container">
                     <a href="<?php echo HTTP; ?>content/blog/2020/wolven-apporteren.php" class="blog__readmore">> Lees meer</a>
-                    <a href="<?php echo HTTP; ?>content/blog/archive.php" class="blog__metadata"><?php the_date('content/blog/2020/wolven-apporteren.php') ?></a>
+                    <a href="<?php echo HTTP; ?>content/blog/archive" class="blog__metadata"><?php the_date('content/blog/2020/wolven-apporteren.php') ?></a>
                 </div>
             </div>
 
@@ -63,7 +63,7 @@
                 <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/hondenbezit-beinvloed-door-genen.php'); ?></p>
                 <div class="blog__links-container">
                     <a href="<?php echo HTTP; ?>content/blog/2020/hondenbezit-beinvloed-door-genen.php" class="blog__readmore">> Lees meer</a>
-                    <a href="<?php echo HTTP; ?>content/blog/archive.php" class="blog__metadata"><?php the_date('content/blog/2020/hondenbezit-beinvloed-door-genen.php') ?></a>
+                    <a href="<?php echo HTTP; ?>content/blog/archive" class="blog__metadata"><?php the_date('content/blog/2020/hondenbezit-beinvloed-door-genen.php') ?></a>
                 </div>
             </div>
 
