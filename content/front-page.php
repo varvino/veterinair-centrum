@@ -106,14 +106,16 @@
                         Dierenarts
                     </div>
                 </div>
-                <div class="team__carousel-item">
-                    <div class="team__member-name">
-                        K. Poppe
+                <?php if (date('Y-m-d') <= date('2020-04-01')) : ?>
+                    <div class="team__carousel-item">
+                        <div class="team__member-name">
+                            K. Poppe
+                        </div>
+                        <div class="team__member-position">
+                            Dierenarts
+                        </div>
                     </div>
-                    <div class="team__member-position">
-                        Dierenarts
-                    </div>
-                </div>
+                <?php endif; ?>
                 <div class="team__carousel-item">
                     <div class="team__member-name">
                         L. Raggers
