@@ -41,14 +41,14 @@ include(ROOT . "template-parts/head.php");
 
         <div class="blog__item">
             <h3 class="blog__headline">
-                <a href="<?php echo HTTP; ?>content/blog/2020/hondenbezit-beinvloeding.php" class="blog__headline-link">
-                    <?php the_title('content/blog/2020/hondenbezit-beinvloeding.php'); ?>
+                <a href="<?php echo HTTP; ?>content/blog/2020/hondenbezit-beinvloed-door-genen.php" class="blog__headline-link">
+                    <?php the_title('content/blog/2020/hondenbezit-beinvloed-door-genen.php'); ?>
                 </a>
             </h3>
-            <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/hondenbezit-beinvloeding.php'); ?></p>
+            <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/hondenbezit-beinvloed-door-genen.php'); ?></p>
             <div class="blog__links-container">
-                <a href="<?php echo HTTP; ?>content/blog/2020/hondenbezit-beinvloeding.php" class="blog__readmore">> Lees meer</a>
-                <div class="blog__metadata"><?php the_date('content/blog/2020/hondenbezit-beinvloeding.php') ?></div>
+                <a href="<?php echo HTTP; ?>content/blog/2020/hondenbezit-beinvloed-door-genen.php" class="blog__readmore">> Lees meer</a>
+                <div class="blog__metadata"><?php the_date('content/blog/2020/hondenbezit-beinvloed-door-genen.php') ?></div>
             </div>
         </div>
 
