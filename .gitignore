@@ -4,10 +4,14 @@
 node_modules/
 /node_modules/
 
-# Source images #
+# Git FTP folder #
 ############
 git-ftp/
 /git-ftp/
+
+# Minified files #
+############
+*.min.*
 
 # Source images #
 ############
