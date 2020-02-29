@@ -1,7 +1,9 @@
 <?php require_once("../../../config.php"); ?>
 
 <?php
-$title = "Wetenschappers zijn onverwacht getuige van wolven die apporteren";
+$meta_title = "Wetenschappers zijn onverwacht getuige van wolven die apporteren";
+$meta_description = "Als het gaat om apporteren, zijn veel honden natuurtalenten. Maar nu melden onderzoekers dat het opmerkelijke vermogen om menselijke sociale communicatieve signalen te begrijpen, waarmee een hond een bal kan pakken en deze vervolgens terug kan brengen - ook bij wolven bestaat.";
+$meta_image = "dist/gfx/images/2020/wolfpuppies.jpg";
 $post_type = "post";
 include(ROOT . "template-parts/head.php");
 ?>

@@ -1,7 +1,8 @@
 <?php require_once("../../config.php"); ?>
 
 <?php
-$title = "Archief";
+$meta_title = "Archief";
+$meta_desciption = "Op deze pagina kunt u onze artikels nalezen";
 $post_type = "archive";
 include(ROOT . "template-parts/head.php");
 ?>

@@ -1,7 +1,9 @@
 <?php require_once("../../../config.php"); ?>
 
 <?php
-$title = "Wetenschappers zijn onverwacht getuige van wolven die apporteren";
+$meta_title = "Het bezit van een hond wordt be&iuml;nvloed door onze genetische samenstelling";
+$meta_description = "De nieuwe studie suggereert dat genetische variatie meer dan de helft van de variatie in hondenbezit verklaart, wat impliceert dat de keuze om een ​​hond te krijgen sterk wordt beïnvloed door de genetische samenstelling van een individu.";
+$meta_image = "dist/gfx/images/2020/dog-owner.jpg";
 $post_type = "post";
 include(ROOT . "template-parts/head.php");
 ?>
