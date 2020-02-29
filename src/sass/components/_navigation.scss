@@ -62,7 +62,7 @@
     }
 }
 
-.nav--front-page .nav__link:after {
+.navigation-container--front-page .nav__link:after {
     background-color: white;
 }
 
@@ -74,6 +74,6 @@
     }
 }
 
-.nav--front-page .hamburger {
+.navigation-container--front-page .hamburger {
     filter: $color-white--filter;
 }
