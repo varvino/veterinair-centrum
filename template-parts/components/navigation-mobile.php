@@ -8,7 +8,7 @@
         </a>
     </li>
     <li class="nav__item">
-        <a class="nav__link" href="#blog">
+        <a class="nav__link" href="<?php echo HTTP; ?>#blog">
             <div class="nav__icon-container">
                 <img src="<?php echo HTTP; ?>dist/gfx/icons/icon_bookmarks.svg" alt="Neem een kijkje in onze blog!" class="nav__icon">
             </div>
@@ -16,7 +16,7 @@
         </a>
     </li>
     <li class="nav__item">
-        <a class="nav__link" href="#team">
+        <a class="nav__link" href="<?php echo HTTP; ?>#team">
             <div class="nav__icon-container">
                 <img src="<?php echo HTTP; ?>dist/gfx/icons/icon_user.svg" alt="Bekijk ons team!" class="nav__icon">
             </div>
@@ -24,7 +24,7 @@
         </a>
     </li>
     <li class="nav__item">
-        <a class="nav__link" href="#contact">
+        <a class="nav__link" href="<?php echo HTTP; ?>#contact">
             <div class="nav__icon-container">
                 <img src="<?php echo HTTP; ?>dist/gfx/icons/icon_contact.svg" alt="Klik hier voor de contact sectie." class="nav__icon">
             </div>
