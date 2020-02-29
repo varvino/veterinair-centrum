@@ -1,7 +1,9 @@
 <header class="header__outer-container <?php if (isset($post_type)) : echo "header__outer-container--" . $post_type;
                                         endif; ?>">
     <div class="header__inner-container">
-        <div class="navigation-container">
+
+        <div class="navigation-container <?php if (isset($post_type) && $post_type == "front-page") : echo 'navigation-container--' . $post_type; endif; ?>">
+
             <div class="logo">
                 <a class="logo__link" href="<?php echo HTTP; ?>">
                     <img class="logo__image" src="<?php echo HTTP; ?>dist/gfx/logo.png" alt="Ga terug naar de voorpagina">
