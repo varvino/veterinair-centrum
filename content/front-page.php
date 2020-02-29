@@ -29,41 +29,41 @@
 
             <div class="blog__item">
                 <h3 class="blog__headline">
-                    <a href="<?php echo HTTP; ?>content/blog/2020/wearables-voor-huisdieren" class="blog__headline-link">
+                    <a href="<?php echo HTTP; ?>content/blog/2020/wearables-voor-huisdieren.php" class="blog__headline-link">
                         <?php the_title('content/blog/2020/wearables-voor-huisdieren.php'); ?>
                     </a>
                 </h3>
                 <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/wearables-voor-huisdieren.php'); ?></p>
                 <div class="blog__links-container">
                     <a href="<?php echo HTTP; ?>content/blog/2020/wearables-voor-huisdieren.php" class="blog__readmore">> Lees meer</a>
-                    <a href="<?php echo HTTP; ?>content/blog/archive" class="blog__metadata"><?php the_date('content/blog/2020/wearables-voor-huisdieren.php') ?></a>
+                    <a href="<?php echo HTTP; ?>content/blog/archive.php" class="blog__metadata"><?php the_date('content/blog/2020/wearables-voor-huisdieren.php') ?></a>
                 </div>
             </div>
 
 
             <div class="blog__item">
                 <h3 class="blog__headline">
-                    <a href="<?php echo HTTP; ?>content/blog/2020/wolven-apporteren" class="blog__headline-link">
+                    <a href="<?php echo HTTP; ?>content/blog/2020/wolven-apporteren.php" class="blog__headline-link">
                         <?php the_title('content/blog/2020/wolven-apporteren.php'); ?>
                     </a>
                 </h3>
                 <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/wolven-apporteren.php'); ?></p>
                 <div class="blog__links-container">
                     <a href="<?php echo HTTP; ?>content/blog/2020/wolven-apporteren.php" class="blog__readmore">> Lees meer</a>
-                    <a href="<?php echo HTTP; ?>content/blog/archive" class="blog__metadata"><?php the_date('content/blog/2020/wolven-apporteren.php') ?></a>
+                    <a href="<?php echo HTTP; ?>content/blog/archive.php" class="blog__metadata"><?php the_date('content/blog/2020/wolven-apporteren.php') ?></a>
                 </div>
             </div>
 
             <div class="blog__item">
                 <h3 class="blog__headline">
-                    <a href="<?php echo HTTP; ?>content/blog/2020/hondenbezit-beinvloed-door-genen" class="blog__headline-link">
+                    <a href="<?php echo HTTP; ?>content/blog/2020/hondenbezit-beinvloed-door-genen.php" class="blog__headline-link">
                         <?php the_title('content/blog/2020/hondenbezit-beinvloed-door-genen.php'); ?>
                     </a>
                 </h3>
                 <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/hondenbezit-beinvloed-door-genen.php'); ?></p>
                 <div class="blog__links-container">
                     <a href="<?php echo HTTP; ?>content/blog/2020/hondenbezit-beinvloed-door-genen.php" class="blog__readmore">> Lees meer</a>
-                    <a href="<?php echo HTTP; ?>content/blog/archive" class="blog__metadata"><?php the_date('content/blog/2020/hondenbezit-beinvloed-door-genen.php') ?></a>
+                    <a href="<?php echo HTTP; ?>content/blog/archive.php" class="blog__metadata"><?php the_date('content/blog/2020/hondenbezit-beinvloed-door-genen.php') ?></a>
                 </div>
             </div>
 
