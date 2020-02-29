@@ -24,14 +24,14 @@
     <meta property="og:url" content="//www.veterinair-centrum.nl/">
     <meta property="og:title" content="<?php if (isset($meta_title)) :  echo $meta_title; else: echo 'Veterinair Centrum Genemuiden'; endif; ?>">
     <meta property="og:description" content="<?php if (isset($meta_description)) :  echo $meta_description; else : echo 'Wij zijn een dierenartsenpraktijk voor gezelschapsdieren, paarden en landbouwhuisdieren in Genemuiden.'; endif; ?>">
-    <meta property="og:image" content="<?php if (isset($meta_image)) :  echo HTTP .$meta_image; else: echo HTTP . 'dist/gfx/backgrounds/hero.svg'; endif; ?>">
+    <meta property="og:image" content="http:<?php if (isset($meta_image)) :  echo HTTP . $meta_image; else: echo HTTP . 'dist/gfx/backgrounds/hero.svg'; endif; ?>">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="//www.veterinair-centrum.nl/">
     <meta property="twitter:title" content="<?php if (isset($meta_title)) :  echo $meta_title; endif; ?>">
     <meta property="twitter:description" content="<?php if (isset($meta_description)) :  echo $meta_description; endif; ?>">
-    <meta property="twitter:image" content="<?php if (isset($meta_image)) :  echo HTTP .$meta_image; else: echo HTTP . 'dist/gfx/backgrounds/hero.svg'; endif; ?>">
+    <meta property="twitter:image" content="http:<?php if (isset($meta_image)) :  echo HTTP . $meta_image; else: echo HTTP . 'dist/gfx/backgrounds/hero.svg'; endif; ?>">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo HTTP; ?>dist/gfx/favicons/apple-touch-icon.png">
