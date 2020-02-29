@@ -23,9 +23,9 @@
 
         <?php if (isset($post_type) && $post_type == "front-page") : ?>
             <div class="hero-container">
-                <h2 class="hero__text">
+                <h1 class="hero__text">
                     Wij zijn een dierenartsenpraktijk voor gezelschapsdieren, paarden en landbouwhuisdieren.
-                </h2>
+                </h1>
                 <a href="#contact" class="hero__button button">Afspraak maken</a>
             </div>
 
