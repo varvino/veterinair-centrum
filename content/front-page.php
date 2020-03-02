@@ -126,11 +126,8 @@
                         </div>
                     </div>
                 <?php endif; ?>
-                
+
                 <div class="team__carousel-item">
-                    <div class="team__member-alert">
-                        I. Koers vangt de werktaak van L. Raggers op gedurende 3 maanden
-                    </div>
                     <div class="team__member-name">
                         L. Raggers
                     </div>

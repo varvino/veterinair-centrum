@@ -315,21 +315,6 @@
     }
 }
 
-.team__member-alert {
-    background-color: #ffefdc;
-    padding         : 1rem;
-    margin-bottom   : 1rem;
-    border-radius   : 4px;
-
-    @include phone {
-        max-width: 220px;
-    }
-
-    @include tablet {
-        max-width: 220px;
-    }
-}
-
 .team__member-name {
     font-weight  : 700;
     font-size    : 1.125rem;
