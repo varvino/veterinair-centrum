@@ -116,7 +116,21 @@
                         </div>
                     </div>
                 <?php endif; ?>
+                <?php if (date('Y-m-d') <= date('2020-06-15')) : ?>
+                    <div class="team__carousel-item">
+                        <div class="team__member-name">
+                            I. Koers
+                        </div>
+                        <div class="team__member-position">
+                            Paraveterinair
+                        </div>
+                    </div>
+                <?php endif; ?>
+                
                 <div class="team__carousel-item">
+                    <div class="team__member-alert">
+                        I. Koers vangt de werktaak van L. Raggers op gedurende 3 maanden
+                    </div>
                     <div class="team__member-name">
                         L. Raggers
                     </div>
