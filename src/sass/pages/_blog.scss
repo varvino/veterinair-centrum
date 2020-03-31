@@ -33,6 +33,20 @@
 
 .blogpost__content {
 
+    ul,
+    ol {
+        list-style  : initial;
+        padding-left: 1em;
+
+        li {
+            padding-bottom: 1em;
+
+            &:not(:last-child) {
+                padding-bottom: 0;
+            }
+        }
+    }
+
     h1,
     h2,
     h3,
