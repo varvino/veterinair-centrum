@@ -10,7 +10,7 @@ include(ROOT . "template-parts/head.php");
 <?php include(ROOT . "template-parts/header.php"); ?>
 
 <main class="h-container">
-    <h1 class="blogpost__headline">Coronavirus maatregelen bij het Veterinair Centrum Genemuiden</h1>
+    <h1 class="blogpost__headline">Coronavirus maatregelen bij Veterinair Centrum Genemuiden</h1>
     <a href="<?php echo HTTP; ?>content/blog/archive.php" class="blogpost__date">
         16 maart 2020
     </a>

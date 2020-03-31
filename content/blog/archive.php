@@ -15,6 +15,19 @@ include(ROOT . "template-parts/head.php");
 
         <div class="blog__item">
             <h3 class="blog__headline">
+                <a href="<?php echo HTTP; ?>content/blog/2020/coronavirus-maatregelen.php" class="blog__headline-link">
+                    <?php the_title('content/blog/2020/coronavirus-maatregelen.php'); ?>
+                </a>
+            </h3>
+            <p class="blog__excerpt"><?php the_excerpt('content/blog/2020/coronavirus-maatregelen.php'); ?></p>
+            <div class="blog__links-container">
+                <a href="<?php echo HTTP; ?>content/blog/2020/coronavirus-maatregelen.php" class="blog__readmore">> Lees meer</a>
+                <a href="<?php echo HTTP; ?>content/blog/archive.php" class="blog__metadata"><?php the_date('content/blog/2020/coronavirus-maatregelen.php') ?></a>
+            </div>
+        </div>
+
+        <div class="blog__item">
+            <h3 class="blog__headline">
                 <a href="<?php echo HTTP; ?>content/blog/2020/wearables-voor-huisdieren.php" class="blog__headline-link">
                     <?php the_title('content/blog/2020/wearables-voor-huisdieren.php'); ?>
                 </a>
@@ -25,7 +38,7 @@ include(ROOT . "template-parts/head.php");
                 <div class="blog__metadata"><?php the_date('content/blog/2020/wearables-voor-huisdieren.php') ?></div>
             </div>
         </div>
-        
+
         <div class="blog__item">
             <h3 class="blog__headline">
                 <a href="<?php echo HTTP; ?>content/blog/2020/wolven-apporteren.php" class="blog__headline-link">
