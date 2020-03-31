@@ -1,3 +1,5 @@
+<?php include(ROOT . "template-parts/components/notifications.php") ?>
+
 <header class="header__outer-container <?php if (isset($post_type)) : echo "header__outer-container--" . $post_type;
                                         endif; ?>">
     <div class="header__inner-container">
