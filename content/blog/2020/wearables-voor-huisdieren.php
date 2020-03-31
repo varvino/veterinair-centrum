@@ -17,7 +17,7 @@ include(ROOT . "template-parts/head.php");
     <div class="blogpost__content">
         <p class="blogpost__content-lead">Onderzoekers van het Imperial College London hebben een nieuwe sensor voor het volgen van gezondheid voor huisdieren en mensen uitgevonden die vitale functies bewaakt door vacht en kleding.</p>
         <p>Het nieuwe type sensor, dat vitale functies zoals hart en ademhaling kan detecteren via vacht en maximaal vier lagen kleding, kan helpen om dagelijkse wearables voor huisdieren en vee tot realiteit te maken.</p>
-        <img src="<?php echo HTTP; ?>dist/gfx/images/2020/dog-clothed.jpg" alt="Een foto">
+        <img src="<?php echo HTTP; ?>dist/gfx/images/2020/dog-clothed.jpg" alt="Een pup met kleding">
         <p>Anders dan bij mensen, voor wie er veel fitness-volgapparatuur is, zijn er momenteel niet veel 'draagbare' opties voor huisdieren en andere dieren.Toen de onderzoekers hun apparaat testten op vijf mensen en één hond, ontdekten ze dat het tot vier lagen kleding doorwerkt, en dat de sensor het beste werkt wanneer de kleding of de vachtt recht tegen de huid zit.</p>
         <h2>Bij toeval ondervonden</h2>
         <p>Naast het volgen van de gezondheid, zeggen de onderzoekers dat de sensoren kunnen helpen om bevindingen van speurhonden om te zetten in meetbare gegevens.</p>

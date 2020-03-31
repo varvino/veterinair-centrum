@@ -19,7 +19,7 @@ include(ROOT . "template-parts/head.php");
         <h2>Bij toeval ondervonden</h2>
         <p>Tijdens een reeks testen toonden drie wolvenjongen spontaan interesse in een bal en keerden deze na aanmoediging terug naar een onderzoeker.</p>
         <p>Om dit te bestuderen, fokken de onderzoekers wolven met honden en ondergaan hun jongen verschillende gedragstesten.</p>
-        <img src="<?php echo HTTP; ?>dist/gfx/images/2020/wolfpuppies.jpg" alt="Een foto">
+        <img src="<?php echo HTTP; ?>dist/gfx/images/2020/wolfpuppies.jpg" alt="Twee wolvenpups spelend">
         <p>De eerste twee wolvennesten waarmee ze samenwerkten, toonden weinig tot geen interesse in ballen, laat staan ​​dat ze er één haalden.</p>
         <p>Dat is totdat ze het derde nest testten en sommige puppy's niet alleen voor de bal gingen, maar ook reageerden op de sociale signalen van de onderzoekers en deze terugbrachten.</p>
         <h2>Heel verassend</h2>
