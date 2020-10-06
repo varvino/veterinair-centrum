@@ -4,16 +4,6 @@
 node_modules/
 /node_modules/
 
-# Git FTP folder #
-############
-git-ftp/
-/git-ftp/
-
-# Source images #
-############
-src/gfx/**
-src/gfx/**/*
-
 # Packages #
 ############
 *.7z
